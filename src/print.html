@@ -1,0 +1,1626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print</title>
+    <link rel="stylesheet" href="./css/print.css" />
+    <script src="./js/print.js" defer></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="active" data-print="op-note">OP Note</div>
+      <div data-print="treatment-sheet-post-operative-order">
+        Post Operative Order
+      </div>
+      <div data-print="treatment-sheet-fresh-order">Fresh Order</div>
+      <div data-print="treatment-sheet-medicine">Treatment Sheet</div>
+      <div data-print="cesarean-section-consent">Cesarean Consent</div>
+      <div data-print="gyne-section-consent">Gyne Consent</div>
+      <div data-print="anesthesia-consent">Anesthesia Consent</div>
+      <div data-print="invasive-consent">Invasive Consent</div>
+      <div data-print="medicine">Medicine</div>
+    </nav>
+
+    <main>
+      <div class="op-note active">
+        <header>
+          <div>
+            <img src="./static/logo.jpg" />
+          </div>
+          <div>
+            <h1>TARAFDER CLINIC & DIAGNOSTIC CENTER</h1>
+            <div>Puraton Bazar, Darsana, Damurhuda, Chuadanga</div>
+            <div>Mobile: 01822-555222</div>
+          </div>
+        </header>
+
+        <div>OPERATION NOTE</div>
+
+        <div class="content">
+          <div>
+            <div>Date of Operation</div>
+            <div>:</div>
+            <div class="op-note-date"></div>
+          </div>
+
+          <div>
+            <div>Time of Operation</div>
+            <div>:</div>
+            <div class="op-note-time"></div>
+          </div>
+
+          <div>
+            <div>Name of Operation</div>
+            <div>:</div>
+            <div></div>
+          </div>
+
+          <div>
+            <div>Indication</div>
+            <div>:</div>
+            <div class="op-note-indication"></div>
+          </div>
+
+          <div>
+            <div>Name of Surgeon</div>
+            <div>:</div>
+            <div class="op-note-surgeon"></div>
+          </div>
+
+          <div>
+            <div>Name of Asst. Surgeon</div>
+            <div>:</div>
+            <div class="op-note-asst"></div>
+          </div>
+
+          <div>
+            <div>Name of Anesthesiologist</div>
+            <div>:</div>
+            <div class="op-note-anes"></div>
+          </div>
+
+          <div>
+            <div>Name of Anesthesia</div>
+            <div>:</div>
+            <div class="op-note-anes-type"></div>
+          </div>
+
+          <div>
+            <div>Findings and Procedure</div>
+            <div>:</div>
+            <div class="op-note-finding"></div>
+          </div>
+        </div>
+
+        <footer>
+          <div>Signature of Anesthesiologist</div>
+          <div>Signature of Surgeon</div>
+        </footer>
+
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="treatment-sheet-post-operative-order">
+        <header>
+          <div>
+            <div class="icon"><img src="./static/logo.jpg" /></div>
+            <div>
+              <h1>TARAFDER CLINIC & DIAGNOSTIC CENTER</h1>
+              <div>Puraton Bazar, Darsana, Damurhuda, Chuadanga</div>
+              <div>Mobile: 01822-555222</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>Patient Name:</div>
+              <div class="ts-name"></div>
+            </div>
+            <div>
+              <div>Age:</div>
+              <div class="ts-age"></div>
+            </div>
+            <div>
+              <div>Sex:</div>
+              <div class="ts-sex"></div>
+            </div>
+            <div>
+              <div>Date:</div>
+              <div class="ts-date"></div>
+            </div>
+            <div>
+              <div>Bed:</div>
+              <div class="ts-bed"></div>
+            </div>
+          </div>
+        </header>
+        <div class="follow-up">
+          <div>
+            <div>OT Note</div>
+            <div>Baby Note</div>
+          </div>
+          <div>
+            <div><img src="./static/1.png" /></div>
+            <div>
+              <div>Rx.</div>
+              <div>NPO TFO</div>
+            </div>
+            <ul>
+              <li>
+                <div>
+                  Inf. <span class="bold">H/S</span> +
+                  <span class="bold">5% DNS</span> +
+                  <span class="bold">5% DA</span>
+                  <span class="italic">1Litter</span>
+                </div>
+                <div>IV @25-30 d/min</div>
+              </li>
+              <li>
+                <div>
+                  Inj. <span class="bold">Trizon</span> /
+                  <span class="bold">Oricef</span> /
+                  <span class="bold">Arixon</span>
+                  <span class="italic">1gm/2gm</span>
+                </div>
+                <div>1Vial IV stat & 12 hourly</div>
+              </li>
+
+              <li>
+                <div>
+                  Inj. <span class="bold">Phylopen </span> /
+                  <span class="bold">Floclox</span> /
+                  <span class="bold">Flux</span> /
+                  <span class="bold">Fluxabac</span>
+                  <span class="italic">250mg/500mg</span>
+                </div>
+                <div>1Vial IV stat & 6 hourly</div>
+              </li>
+
+              <li>
+                <div>
+                  Inj. <span class="bold">Moxaclav</span>
+                  <span class="italic">750gm/1.2gm</span>
+                </div>
+                <div>1Vial IV stat & 12 hourly</div>
+              </li>
+              <li>
+                <div>
+                  Inj. <span class="bold">Furotil</span>
+                  <span class="italic">750gm/1.5gm</span>
+                </div>
+                <div>1Vial IV stat & 12 hourly</div>
+              </li>
+              <li>
+                <div>
+                  Inf. <span class="bold">Metryl</span> /
+                  <span class="bold">Amodis</span>/
+                  <span class="bold">Metro</span>
+                  <span class="italic">500mg</span>
+                </div>
+                <div>1Bottle IV Stat & 8 hourly</div>
+              </li>
+
+              <li>
+                <div>
+                  Inj. <span class="bold">Toramax</span> /
+                  <span class="bold">Rolac</span> /
+                  <span class="bold">Zeropain</span>
+                  <span class="italic">30mg/60mg</span>
+                </div>
+                <div>1Ample IV stat & 12 hourly</div>
+              </li>
+              <li>
+                <div>
+                  Inj. <span class="bold">Remmo</span> /
+                  <span class="bold">Maxpro</span> /
+                  <span class="bold">Sergel</span> /
+                  <span class="bold">Esotid</span>
+                  <span class="italic">40mg </span>
+                </div>
+                <div>1Vial IV stat & 12 hourly</div>
+              </li>
+              <li>
+                <div>
+                  Inj. <span class="bold">Emistat</span>
+                  <span class="italic">8mg</span>
+                </div>
+                <div>1Ample IV Stat & SOS</div>
+              </li>
+
+              <li>
+                <div>
+                  Inj. <span class="bold">Nalbun</span>
+                  <span class="italic">10mg/20mg</span>
+                </div>
+                <div>1Ample IM Stat & SOS</div>
+              </li>
+
+              <li>
+                <div>
+                  Supp. <span class="bold">Voltalin</span>
+                  <span class="italic">12.5mg/25mg/50mg</span>
+                </div>
+                <div>1 Stick P/R -------> SOS</div>
+              </li>
+              <li>
+                <div><span class="bold">Continuous Catheterization</span></div>
+              </li>
+
+              <li>
+                <div><span class="bold">Please, Monitor vital sign.</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <div>Medical Officer</div>
+        </footer>
+
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="treatment-sheet-fresh-order">
+        <header>
+          <div>
+            <div class="icon"><img src="./static/logo.jpg" /></div>
+            <div>
+              <h1>TARAFDER CLINIC & DIAGNOSTIC CENTER</h1>
+              <div>Puraton Bazar, Darsana, Damurhuda, Chuadanga</div>
+              <div>Mobile: 01822-555222</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>Patient Name:</div>
+              <div class="ts-name"></div>
+            </div>
+            <div>
+              <div>Age:</div>
+              <div class="ts-age"></div>
+            </div>
+            <div>
+              <div>Sex:</div>
+              <div class="ts-sex"></div>
+            </div>
+            <div>
+              <div>Date:</div>
+              <div class="ts-date"></div>
+            </div>
+            <div>
+              <div>Bed:</div>
+              <div class="ts-bed"></div>
+            </div>
+          </div>
+        </header>
+        <div class="follow-up">
+          <div>
+            <div>BP</div>
+          </div>
+          <div>
+            <div>
+              <img src="./static/2.png" />
+            </div>
+            <div>
+              <div>Rx</div>
+              <div>
+                <div>Diet -----> Sips of Water then semi solid to solid.</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <div>
+                  Inj. <span class="bold">Trizon</span> /
+                  <span class="bold">Oricef</span> /
+                  <span class="bold">Arixon</span>
+                  <span class="italic">1gm/2gm</span>
+                </div>
+                <div>1 Vial IV 12 Hourly</div>
+              </li>
+
+              <li>
+                <div>
+                  Inf. <span class="bold">Ciprocin</span> /
+                  <span class="bold">Xerox</span> /
+                  <span class="bold">Ciprox</span>
+                  <span class="italic">200mg/100ml</span>
+                </div>
+                <div>1Bottle IV stat & 12 hourly</div>
+              </li>
+
+              <li>
+                <div>
+                  Inf. <span class="bold">Phylopen</span> /
+                  <span class="bold">Fluclox</span> /
+                  <span class="bold">Flux</span>
+                  <span class="bold">Floxabac</span>
+                  <span class="italic">250mg/500mg</span>
+                </div>
+                <div>1Vial IV stat & 6 hourly</div>
+              </li>
+
+              <li>
+                <div>
+                  Inj. <span class="bold">Toramax</span> /
+                  <span class="bold">Rolac</span> /
+                  <span class="bold">Zeropain</span>
+                  <span class="italic">30mg/60mg</span>
+                </div>
+                <div>1Ample IV stat & 12 hourly</div>
+              </li>
+              <li>
+                <div>
+                  Tab. <span class="bold">Metryl</span> /
+                  <span class="bold">Amodis</span> /
+                  <span class="bold">Metro</span>
+                  <span class="italic">400mg</span>
+                </div>
+                <div>1 + 1 + 1</div>
+              </li>
+              <li>
+                <div>
+                  Cap. <span class="bold">Acifix</span> /
+                  <span class="bold">Sergel</span> /
+                  <span class="bold">Remmo</span>
+                  <span class="italic">20mg/40mg</span>
+                </div>
+                <div>1 + 0 + 1</div>
+              </li>
+
+              <li>
+                <div>
+                  Tab. <span class="bold">Omidon</span> /
+                  <span class="bold">Don-A</span> /
+                  <span class="bold">Domin</span>
+                  <span class="italic">10mg</span>
+                </div>
+                <div>1 + 1 + 1</div>
+              </li>
+
+              <li>
+                <div>
+                  Supp. <span class="bold">Voltalin</span>
+                  <span class="italic">50mg</span>
+                </div>
+                <div>1 Stick P/R -------> SOS</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <footer>
+          <div>Medical Officer</div>
+        </footer>
+
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="treatment-sheet-medicine">
+        <header>
+          <div>Treatment Sheet (Medicine)</div>
+          <div>
+            <div><img src="./static/logo.jpg" /></div>
+            <div>
+              <h1>TARAFDER CLINIC & DIAGNOSTIC CENTER</h1>
+
+              <div>Puraton Bazar, Darsana, Damurhuda, Chuadanga</div>
+              <div>Mobile: 01822-555222</div>
+            </div>
+          </div>
+          <div>
+            <div>
+              Patient Name:
+              <div class="tsmname"></div>
+            </div>
+            <div>
+              Age:
+              <div class="tsmage"></div>
+            </div>
+            <div>
+              Sex:
+              <div class="tsmsex"></div>
+            </div>
+            <div>
+              Date:
+              <div class="tsmdate"></div>
+            </div>
+            <div>
+              Bed:
+              <div class="tsmbed"></div>
+            </div>
+          </div>
+        </header>
+        <div class="follow-up">
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Dose</th>
+              <th>Route</th>
+              <th>Name of Medicine</th>
+              <th>Name of Nurse</th>
+              <th>Signature</th>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="cesarean-section-consent">
+        <header>
+          <h2>সিজারিয়ান সেকশন অপারেশন সম্মতিপত্র</h2>
+          <h5>(স্বাস্থ্য অধিদপ্তর কর্তৃক অনুমোদনকৃত)</h5>
+        </header>
+        <div class="form">
+          <div class="line1">
+            রেজিষ্ট্রেশন নং:
+            ............................................................ কেবিন
+            নং: .................................................... তারিখ:
+            .................................
+          </div>
+
+          <div class="line2">
+            রোগীর নাম:
+            ..........................................................................................................................................
+            বয়স: .................................বছর
+          </div>
+          <div class="line3">
+            কনসালটেন্টের
+            নাম:................................................................................................................................................................................
+          </div>
+          <div>
+            ..............................................................................................................................................................................................................
+          </div>
+          <div class="line4">
+            অপারেশন সম্পাদনকারী ডাক্তার:
+            ..........................................................................................................................................................
+          </div>
+          <div class="line5">
+            এনেস্থেশিয়া ডাক্তার:
+            ..............................................................................................................................................................................
+          </div>
+          <div class="line6">
+            এনেস্থেশিয়ার ধরণ:
+            ................................................................................................................................................................................
+          </div>
+          <div class="line7">
+            ডায়াগনোসিস:
+            .........................................................................................................................................................................................
+          </div>
+          <div>
+            ...............................................................................................................................................................................................................
+          </div>
+          <div class="line8">
+            ইনডিকেশন:
+            ...........................................................................................................................................................................................
+          </div>
+        </div>
+
+        <div class="consents">
+          <div>
+            ১. আমি এ ফরম স্বাক্ষর করত: উপরোল্লিখিত অপারেশন "তরফদার ক্লিনিক এন্ড
+            ডায়াগনোস্টিক সেন্টারের" মনোনীত চিকিৎসক (গণ), নার্স এবং তার
+            সার্জিক্যাল টিমের সহায়তায় (কোনভাবে প্রভাবিত না হয়ে) সম্পন্ন করার
+            পূর্ণ সম্মতী দিচ্ছি।
+          </div>
+          <div>
+            ২. অপারেশন চলাকালীন চেতনানাশক/ঘুমের ঔষধ/ব্যাথানাশক ঔষধ ব্যবহৃত হয় যা
+            ব্যবহার করে আমাকে নিদ্রাচ্ছন্ন/অজ্ঞান বা শরীরের নীচের অংশ অবশ করা
+            হবে। এটা বুঝেই আমি আমার/আমাদের সম্মতি জ্ঞাপন করছি।
+          </div>
+          <div>
+            ৩. ডাক্তার আমার কাছে ব্যাখ্যা করেছেন আমার এবং আমার গর্ভস্থ শিশুর
+            শারিরীক অবস্থা কেমন এবং তার জন্য সিজারিয়ান সেকশন অপারেশন দরকার, না
+            হলে সম্ভব্য পরিণতি কি হতে পারে জেনে আমি/আমরা অপারেশনে রাজি হয়েছে।
+          </div>
+          <div>
+            ৪. বিশেষজ্ঞ ডাক্তার/তার মনোনীত ডাক্তার আমার অপারেশন সংক্রান্ত
+            উপকারিতা, জটিলতা সম্বন্ধে অবহিত করেছেন।
+          </div>
+          <div>
+            ৫. রক্তক্ষরণ একটি প্রত্যাশিত ঘটনা। সিজারিয়ান অপারেশন চলাকালীন এবং
+            পরবর্তীতে কখনো কখনো অতিরিক্ত রক্তপাত হতে পারে এবং তা বন্ধ করা না
+            গেলে বিভিন্ন পদক্ষেপ নিতে হতে পারে এবং এজন্য প্রয়োজনে জরায়ু অপসারন
+            করতে আমার অনুমতি প্রদান করছি।
+          </div>
+          <div>
+            ৬. আমি অবগত যে, অপারেশন অনেক সময় অপ্রত্যাশিত জটিলতা, অজ্ঞান/অবশকরণ
+            সংক্রান্ত জটিলতা হতে পারে। এমন পরিস্থিতিতে আইসিইউ, সিসিইউতে
+            ভর্তির/স্থানান্তরের প্রয়োজন হতে পারে। এমন পরিস্থিতিতে হৃদযন্ত্রে
+            ক্রিয়া বন্ধ হয়ে মৃত্যুর ঝুঁকিও রয়েছে। এসব জটিলতা অবগত হওয়ার পরেও আমি
+            অপারেশনে সম্মতি প্রদান করছি।
+          </div>
+
+          <div>
+            ৭. অপারেশন চলাকালীন সময়/পরবর্তীতে রক্তক্ষরণ জনিত কারণে রক্ত বা
+            রক্তজাত দ্রব্যাদির প্রয়োজনীতার ব্যাপারে আমাকে অবহিত কারা হয়েছে এবং এ
+            ব্যাপারে প্রয়োজনীয় ব্যবস্থায় আমার/আমাদের সম্মতি আছি।
+          </div>
+          <div>
+            ৮. অপারেশনের জন্য কোন জটিলতা দেখা দিলে বা মৃত্যুর মত অনাকাঙ্খিত
+            ঝুঁকির মধ্যে পড়লে, কর্তব্যরত ডাক্তার অন্য কোন আমন্ত্রিত
+            ডাক্তার/ডাক্তারগণ বা প্রফেসর/ ডা.
+            ................................................... তার টিম এর
+            সহায়তা নিলে হাসপাতাল কতৃপক্ষ দায়ী ডাক্তার/ডাক্তারগন বা প্রফেসর/ডাঃ
+            থাকিবে না। এটি আমি/আমরা বুঝে শুনে সম্মতি প্রদান করছি।
+          </div>
+
+          <div>
+            ৯. আমি চিকিৎসা সংক্রান্ত সকল বিষয়ে প্রশ্ন করার সুযোগ পেয়েছি। এ
+            সম্বন্ধে আমাকে সহজ ভাষায় ব্যাখ্যা করা হয়েছে যা আমি বুঝতে পেরেছি।
+          </div>
+          <br /><br /><br /><br /><br />
+          <div>
+            <div>
+              ১০. উপযুক্ত বিষয়সমূহ সম্পূর্ণ অনুধাবন করে আমি/আমরা সজ্ঞানে এবং
+              সেচ্ছায় চিকিৎসকদের অপারেশনের অনুমতি প্রদান করছি।
+            </div>
+
+            <div>
+              <table class="table-1">
+                <tr>
+                  <th></th>
+                  <th>নাম</th>
+                  <th>স্বাক্ষর</th>
+                  <th>মোবাইল নং</th>
+                  <th>তারিখ</th>
+                  <th>সময়</th>
+                </tr>
+                <tr>
+                  <td>রোগি</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>স্বামী/নিকটতম আত্মীয়</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div>
+            <div>১১. অপারেশন সম্পন্নকারী চিকিৎসক:</div>
+
+            <div>
+              <table class="table-2">
+                <tr>
+                  <th></th>
+                  <th>নাম</th>
+                  <th>স্বাক্ষর</th>
+                  <th>তারিখ</th>
+                  <th>সময়</th>
+                </tr>
+
+                <tr>
+                  <td>সার্জন</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>অবেদনবিদ</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="gyne-section-consent">
+        <header>
+          <h2>মেজর (গাইনী) অপারেশনের সম্মতিপত্র</h2>
+          <h5>(স্বাস্থ্য অধিদপ্তর কর্তৃক অনুমোদনকৃত)</h5>
+        </header>
+        <div class="form">
+          <div class="line1">
+            রেজিষ্ট্রেশন নং:
+            ............................................................ কেবিন
+            নং: .................................................... তারিখ:
+            .................................
+          </div>
+
+          <div class="line2">
+            রোগীর নাম:
+            ..........................................................................................................................................
+            বয়স: .................................বছর
+          </div>
+          <div>
+            ..................................................................................................................................................................................................................
+          </div>
+          <div class="line3">
+            ‌ইউনিট প্রধানের
+            নাম:................................................................................................................................................................................
+          </div>
+
+          <div class="line4">
+            অপারেশন সম্পাদনকারী চিকিৎসক এর নাম:
+            ...........................................................................................................................................
+          </div>
+          <div class="line5">
+            এনেস্থেশিওলজিস্ট এর নাম:
+            .....................................................................................................................................................................
+          </div>
+
+          <div class="line7">
+            ডায়াগনোসিস:
+            ............................................................................................................................................................................................
+          </div>
+          <div>
+            ...................................................................................................................................................................................................................
+          </div>
+          <div class="line8">
+            অপারেশন এর নাম:
+            ...................................................................................................................................................................................
+          </div>
+
+          <div>
+            ....................................................................................................................................................................................................................
+          </div>
+
+          <div class="line6">
+            এনেস্থেশিয়ার ধরণ:
+            ...................................................................................................................................................................................
+          </div>
+        </div>
+
+        <div class="consents">
+          <div>
+            ১. আমি এ ফরম স্বাক্ষর করত: উপরোল্লিখিত অপারেশন হাসপাতালের মনোনীত
+            চিকিৎসক (গণ), নার্স এবং তার সার্জিক্যাল টিমের সহায়তায় (কোনভাবে
+            প্রভাবিত না হয়ে) সম্পন্ন করার পূর্ণ সম্মতি দিচ্ছি।
+          </div>
+          <div>
+            ২. চিকিৎসক আমাকে অপারেশনের কারণ এবং পদ্ধতি বুঝিয়ে বলেছেন। ব্যাপারটি
+            সম্পূর্ণ অবগত হয়ে আমি এবং আমার অভিভাবক এ ব্যাপারে সম্মতি দিচ্ছি।
+          </div>
+          <div>
+            ৩. অপারেশন চলাকালীন কোন অপ্রত্যাশিত সমস্যার সমাধানে প্রয়োজন অনিযায়ী
+            সার্জারীর অনুমতি প্রদান করছি।
+          </div>
+          <div>
+            ৪. বিশেষজ্ঞ ডাক্তার/তার মনোনীত ডাক্তার আমার অপারেশন সংক্রান্ত
+            উপকারিতা, জটিলতা, অপারেশনের বিকল্প ব্যবস্থা সম্বন্ধে অবহিত করেছেন।
+          </div>
+          <div>
+            ৫. অপারেশন চলাকালীন চেতনানাশক/ঘুমের ঔষধ/ব্যাথানাশক ঔষধ ব্যবহৃত হবে।
+            যা ব্যবহার করে আমাকে নিদ্রাচ্ছন্ন/অজ্ঞান বা শরীরের কোন অংশ অসাড় করা
+            হবে।
+          </div>
+          <div>
+            ৬. আমি অবগত যে, অপারেশন অনেক সময় অপ্রত্যাশিত জটিলতা, অজ্ঞান/অবশকরণ
+            সংক্রান্ত জটিলতা হতে পারে। এমন পরিস্থিতিতে আইসিইউ, সিসিইউতে
+            ভর্তির/স্থানান্তরের প্রয়োজন হতে পারে। এমন পরিস্থিতিতে হৃদযন্ত্রে
+            ক্রিয়া বন্ধ হয়ে মৃত্যুর ঝুঁকিও রয়েছে। এসব জটিলতা অবগত হওয়ার পরেও আমি
+            অপারেশনে সম্মতি প্রদান করছি।
+          </div>
+
+          <div>
+            ৭. অপারেশন চলাকালীন সময়/পরবর্তীতে রক্তক্ষরণ জনিত কারণে রক্ত বা
+            রক্তজাত দ্রব্যাদির প্রয়োজনীতার ব্যাপারে আমাকে অবহিত কারা হয়েছে এবং এ
+            ব্যাপারে প্রয়োজনীয় ব্যবস্থায় আমার/আমাদের সম্মতি আছি।
+          </div>
+          <div>
+            ৮. অপারেশনের জন্য কোন জটিলতা দেখা দিলে বা মৃত্যুর মত অনাকাঙ্খিত
+            ঝুঁকির মধ্যে পড়লে, কর্তব্যরত ডাক্তার অন্য কোন আমন্ত্রিত
+            ডাক্তার/ডাক্তারগণ বা প্রফেসর/ ডা.
+            ................................................... তার টিম এর
+            সহায়তা নিলে হাসপাতাল কতৃপক্ষ দায়ী ডাক্তার/ডাক্তারগন বা প্রফেসর/ডাঃ
+            থাকিবে না। এটি আমি/আমরা বুঝে শুনে সম্মতি প্রদান করছি।
+          </div>
+          <div>
+            ৯. আমি অবগত যে, অপারেশন চলাকালীন আমার শরীর হতে নমুনা, টিস্যু, ছবি বা
+            ভিডিও সংগ্রহ করা হতে পারে। আমি অনুমতি দিচ্ছি যে, এসব
+            পরীক্ষা-নিরিক্ষা বা বৈজ্ঞানিক কারণে ব্যবহার করা যেতে পারে।
+          </div>
+          <div>
+            ১০. আমি চিকিৎসা সংক্রান্ত সকল বিষয়ে প্রশ্ন করার সুযোগ পেয়েছি, এ
+            সম্বন্ধে আমাকে সহজ ভাষায় ব্যাখ্যা করা হয়েছে যা আমি বুঝতে পেরেছি।
+          </div>
+          <div>
+            <div>
+              ১১. উপযুক্ত বিষয়সমূহ সম্পূর্ণ অনুধাবন করে আমি/আমরা সজ্ঞানে এবং
+              সেচ্ছায় চিকিৎসকদের অপারেশনের অনুমতি প্রদান করছি।
+            </div>
+
+            <div>
+              <table class="table-1">
+                <tr>
+                  <th></th>
+                  <th>নাম</th>
+                  <th>স্বাক্ষর</th>
+                  <th>মোবাইল নং</th>
+                  <th>তারিখ</th>
+                  <th>সময়</th>
+                </tr>
+                <tr>
+                  <td>রোগি</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>স্বামী/নিকটতম আত্মীয়</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div>
+            <div>১২. অপারেশন সম্পন্নকারী চিকিৎসক:</div>
+
+            <div>
+              <table class="table-2">
+                <tr>
+                  <th></th>
+                  <th>নাম</th>
+                  <th>স্বাক্ষর</th>
+                  <th>তারিখ</th>
+                  <th>সময়</th>
+                </tr>
+
+                <tr>
+                  <td>সার্জন</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>অবেদনবিদ</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="anesthesia-consent">
+        <header>
+          <h2>(সার্জারি)</h2>
+          <br />
+          <h2>অস্ত্রোপচার এবং অ্যানেস্থেশিয়ার (অবেদন) সম্মতিপত্র</h2>
+          <h5>(স্বাস্থ্য অধিদপ্তর কর্তৃক অনুমোদনকৃত)</h5>
+          <br />
+          <h4>
+            হাসপাতালের নাম:
+            <span style="text-decoration: dotted"
+              ><i>তরফদার ক্লিনিক এন্ড ডায়াগনোস্টিক সেন্টারের</i></span
+            >
+          </h4>
+          <br />
+          <h4>
+            রেজিঃ নম্বরঃ
+            ..........................................................................
+          </h4>
+        </header>
+        <div class="form">
+          <div class="line1">
+            রোগীর নাম:
+            ...................................................................................................................বয়স:
+            ................................. লিঙ্গ ....................
+          </div>
+          <div class="line2">
+            হাসপাতালের আইডি/রেজিঃ নম্বর
+            .....................................................................................................................
+            তারিখ: ........................
+          </div>
+
+          <div class="line3">
+            এনআইডি/জন্ম সনদ নম্বর:
+            .....................................................................................................................................................................
+          </div>
+          <div class="line4">
+            অভিভাবক/স্বজনের নাম (প্রযোজ্য ক্ষেত্র):
+            .................................................................................................................................................
+          </div>
+
+          <div class="line5">
+            রোগীর সাথে সম্পর্ক:
+            .................................................................................................................................................................................
+          </div>
+          <br /><br />
+
+          <div class="line6">
+            ১. প্রস্তাবিত অপারেশন এর নাম:
+            .................................................................................................................................................................
+          </div>
+
+          <div>
+            ...................................................................................................................................................................................................................
+          </div>
+
+          <div>
+            আমি, নিম্নস্বাক্ষরকারী, ডা.
+            ......................................................................
+            এবং তার মনোনীত সার্জিক্যাল টিমকে নিম্নলিখিত পদ্ধতিটি সম্পন্ন
+          </div>
+          <div>করার অনুমতি দিচ্ছি।</div>
+
+          <div class="line7">
+            অস্ত্রোপাচারের নাম:
+            ...................................................................................................................................................................................
+          </div>
+
+          <div>
+            ...................................................................................................................................................................................................................
+          </div>
+
+          <div class="line8">
+            কারণ:
+            .....................................................................................................................................................................................................
+          </div>
+
+          <div>
+            ...................................................................................................................................................................................................................
+          </div>
+
+          <br /><br /><br /><br />
+          <div>২. <b>প্রক্রিয়াটি (অস্ত্রোপচার/চিকিৎসা) সম্পর্কে ধারণা:</b></div>
+          <br /><br />
+          <div>
+            আমি নিশ্চিত করছি যে সার্জন আমাকে নিম্নলিখিত বিষয়গুলো স্পষ্টভাবে
+            ব্যাখ্যা করেছেন-
+          </div>
+          <div>আমার বর্তমান রোগ বা শরীরিক সমস্যার প্রকৃতি।</div>
+          <div>প্রস্তাবিত অস্ত্রোপচার বা চিকিৎসা পদ্ধতি।</div>
+          <div>এই অস্ত্রোপচারের প্রয়োজনীয়তা ও সম্ভব্য ফলাফল/উপকারিতা।</div>
+          <div>অস্ত্রোপচারের সম্ভব্য ঝুঁকি ও জটিলতা।</div>
+          <div>অস্ত্রোপচার না করালে সম্ভাব্য পরিণতি।</div>
+          <div>বিকল্প চিকিৎসা পদ্ধতি (যদি থাকে)।</div>
+
+          <br /><br /><br /><br /><br /><br />
+
+          <div>
+            আমি প্রশ্ন করার সুযোগ পেয়েছি এবং আমার প্রশ্নগুলোর সন্তোষজনক উত্তর
+            পেয়েছি। আমি বুঝতে পেরেছি যে অস্ত্রোপচার একটি ক্লিনিক্যাল প্রক্রিয়া,
+            এর সুনিদিষ্ট ফলাফলের কোনো নিশ্চয়তা দেওয়া সম্ভব নয়।
+          </div>
+
+          <br /><br /><br /><br />
+
+          <div>3. <b>ঝুঁকি এবং জটিলতাসমূহ</b></div>
+          <br /><br />
+          <div>
+            আমি স্বীকার করছি যে, প্রতিটি অস্ত্রোপচারেই ঝুঁকি থাকে। আমার সাথে
+            আলোচনা করা হয়েছে এমন কিছু সম্ভব্য জতিলতা হলো:
+          </div>
+          <br /><br />
+          <div>
+            সাধারণ ঝুঁকি: অতিরিক্ত রক্তক্ষরণ, ক্ষতস্থানে ইনফেকশন, শিরার ভেতরে
+            রক্ত জমাট বাঁধা (DVT)। ফুসফুসে রক্ত জমাট বাঁধা (Pulmonary Embolism)
+            এবং অস্ত্রোপচার দাগ।
+          </div>
+          <br /><br /><br />
+
+          <div>
+            নির্দিষ্ট ঝুঁকি:
+            ......................................................................................................................................................................................
+          </div>
+          <div>
+            ......................................................................................................................................................................................................
+          </div>
+          <br /><br /><br />
+
+          <div>
+            <b>অপ্রত্যাশিত পরিস্থিতি/অতিরিক্ত অস্ত্রোপচার: </b> অস্ত্রোপচার
+            চলাকালীন যদি আমার জীবনের নিরাপত্তার জন্য কোনো অতিরিক্ত জরুরী
+            পদক্ষেপের প্রয়োজন হয়, তবে আমি সার্জনকে তা করার অনুমতি দিচ্ছি।
+          </div>
+          <br /><br />
+
+          <div>৪. <b>অ্যানেস্থেশিয়া বা অবেদন</b></div>
+          <br /><br />
+          <div>
+            আমি অ্যানেস্থেটিস্টের সাথে অনুযায়ী জেনারেল (সম্পূর্ণ অজ্ঞান),
+            রিজিওনাল (শরীরের নিদিষ্ট অংশ অবশ করা) অ্যানেস্থেশিয়া প্রয়োগের সম্মতি
+            দিচ্ছি। আমি জানি যে এর ফলে শ্বাসকষ্ট, অ্যালার্জি বা বিরল ক্ষেত্রে
+            স্নায়ুর ক্ষতি হওয়ার ঝুঁকি থাকতে পারে।
+          </div>
+          <br /><br />
+          <div>
+            ৫. <b>রক্ত সঞ্চালনের জন্য সম্মতি (Consent for Blood Transfusion)</b>
+          </div>
+          <br /><br />
+          <div>
+            আমি বুঝতে পেরেছি যে আমার শারীরিক অবস্থা বা অস্ত্রোপচারের প্রয়োজন
+            রক্ত বা রক্তের উপাদান (যেমন: প্লাজমা, প্লাটিলেট) শরীরে গ্রহণ করার
+            প্রয়োজন হতে পারে।
+          </div>
+          <br /><br />
+          <ul>
+            <li>
+              প্রয়োজনীতা: আমাকে বুঝিয়ে বলা হয়েছে যে রক্তক্ষরণ বা রক্তশূন্যতা
+              রোধে এটি অত্যাবশ্যক।
+            </li>
+            <li>
+              ঝুঁকিসমূহ: আমি অবগত আছি যে রক্ত দেওয়ার ক্ষেত্রে কিছু ঝুঁকি থাকে,
+              যেমন: জ্বর, অ্যালার্জি বা বিরল ক্ষেত্র রক্তবাহিত রোগ (যেমন:
+              হেপাটাইটিস বি, সি বা এইচআইভি)। যদিও প্রতিটি রক্তের ব্যাগ আধুনিক
+              পদ্ধতিতে পরীক্ষা করা হয়, তবুও এই ঝুঁকিগুলো পুরোপুরি নির্মূল করা
+              সম্ভব নয়।
+            </li>
+            <li>
+              বিকল্প: আমি রক্ত সঞ্চালনের বিকল্প এবং এটি না নেওয়ার ফলাফল
+              সম্পর্কেও চিকিৎসকের কাছ থেকে জেনেছি।
+            </li>
+          </ul>
+          <br /><br />
+
+          <div>
+            <div>৬. <b>টিস্যু বা নমুনা পরীক্ষার অনুমতি</b></div>
+            <br /><br />
+
+            আমি সম্মতি প্রদান করছি যে, আমার শরীর থেকে যে কোন নমুনা যেমন: টিস্যু,
+            রক্ত, শরীরের তরল ইত্যাদি পরীক্ষার জন্য ল্যাবরেটরীতে পাঠানো হতে পারে,
+            প্রয়োজন অনুযায়ী ফেলে দেওয়া হতে পারে, অথবা ভবিষ্যতে অধ্যয়ন বা গবেষনার
+            জন্য সংরক্ষণ করা হতে পারে। গবেষনার জন্য ব্যবহৃত যে কোন নমুনা একটি
+            অনুমোদিত বোর্ড দ্বারা পর্যালোচিত হবে। আমি বুঝতে পারছি যে, আমর শরীর
+            থেকে অপসারিত টিস্যু বা উপাদান আমাকে ফেরত দেওয়া হবে না তবে অনুরোধ
+            স্বাপেক্ষে বিষয়টি প্রতিটি ক্ষেত্রি আলাদাভাবে পর্যালোচনা করা হবে।
+          </div>
+          <br /><br /><br /><br /><br /><br />
+
+          <div>
+            <div>৭. <b>বিকিরণ (রেডিয়েশন):</b></div>
+            <br /><br />
+
+            উপরোক্ত অপারেশনে/চিকিৎসায় অস্ত্রোপচার সম্পাদনকারী দল প্রয়োজন অনুসারে
+            বিকিরণ, এক্স-রে বা লেজার এর প্রয়োগ করতে পারেন। এই প্রক্রিয়ার ঝুঁকি
+            সম্পর্কে আমাকে অবহিত করা হয়েছে।
+          </div>
+
+          <br />
+
+          <div>
+            <div>৮. <b>রেসিডেন্ট চিকিৎসক এবং শিক্ষার্থীদের অংশগ্রহন:</b></div>
+            <br /><br />
+
+            <div>
+              শিক্ষামূলক মেডিকেল প্রতিষ্ঠানে সার্জনের সঙ্গে রেসিডেন্ট চিকিৎসক ও
+              শিক্ষার্থীরা কাজ করতে পারে। রেসিডেন্ট চিকিৎসকরা অপারেনের একটি অংশ
+              সম্পাদন করতে পারেন। অপারেনের সময় কোন রেসিডেন্টরা অংশগ্রহণ করবেন তা
+              সার্জন তখনই নির্ধারণ করবেন। রারা কী কী কাজ করতে পারবেন তা তাদের
+              দক্ষতা এবং রোগীর অবস্থার উপর নির্ভর করবে। রেসিডেন্টরা সার্জনের
+              তত্ত্বাবধানে কাজ করবেন।
+            </div>
+            <br />
+            <div>
+              কখনও কখনও একজন অ্যাটেন্ডিং সার্জন একই সময়ে দুটি অপারেশন থিয়েটারে
+              কাজ করা দলগুলোর তত্ত্ববধান করতে পারেন। তবে অপারেনের সব
+              গুরুত্বপূর্ণ অংশ সার্জন বা তার মনোনীত প্রতিনিধি উপস্থিত থাকবেন।
+              যদি সার্জন মনে করেন যে এইটা নিরাপদ, তাহলে রেসিডেন্টদের দ্বারা
+              সম্পাদিত কিছু বা সমস্ত অপারেনের কাজের সময় সার্জন কিছু সময়ের জন্য
+              অপারেশন থিয়েটারের বাইরে থাকতে পারেন
+            </div>
+          </div>
+          <br /><br />
+
+          <div>
+            <div>৯. <b>দর্শানার্থী/চিকিৎসা প্রযুক্তি সহায়কের উপস্থিতি:</b></div>
+            <br /><br />
+
+            <div>
+              আমার চিকিৎসা-সংক্রান্ত প্রযুক্তিগত সহায়তার জন্য আমার সার্জনের সাথে
+              স্বাস্থ্য প্রযুক্তি শিল্পের প্রতিনিধিরা বা অন্যান্য দর্শানার্থীরা
+              অপারেন থিয়েটারে উপস্থিত থাকতে পারেন।
+            </div>
+            <br />
+            <div>
+              <ul>
+                <li>আমি তাদের উপস্থিত থাকার অনুমতি দিচ্ছি।</li>
+                <li>আমি তাদের উপস্থিত থাকার অনুমতি দিচ্ছি না।</li>
+              </ul>
+            </div>
+          </div>
+          <br /><br />
+
+          <div>
+            <div>১০. <b>ভিডিও বা ছবি রেকর্ড:</b></div>
+            <br /><br />
+
+            <div>
+              আমি বুঝতে পারছি যে আমর চিকিৎসা প্রক্রিয়ার অংশ হিসেবে তোলা ভিডিও বা
+              ছবি ভবিষ্যতে ক্লিনিক্যাল শিক্ষা বা প্রকাশনার কাজে ব্যবহার করা হতে
+              পারে। এইভাবে ব্যবহার করা হলে আমার পরিচয় গোপন রাখার জন্য ভিডিও বা
+              ছবিগুলো এমনভাবে সম্মাদনা কার হবে যাতে অন্য কেউ আমাকে শনাক্ত করতে
+              না পারে। আমাকে নিশ্চিত করা হয়েছে যে, আমার সম্মতি ছাড়া এই ভিডিও বা
+              ছবি অন্য কোনো উদ্দেশ্যে ব্যবহার করা হবে না।
+            </div>
+          </div>
+          <br /><br />
+
+          <div>
+            <div>১১. <b>শিক্ষা বা গবেষণার উদ্দেশ্যে ব্যবহার:</b></div>
+            <br />
+
+            <div>
+              রোগীর পরিচয় গোপন রেখে চিকিৎসা শিক্ষা বা গবেষণার কাজে রোগীর চিকিৎসা
+              সম্পর্কিত সকল তথ্য ব্যবহার করা যেতে পারে-এ বিষয়ে আমি অবগত।
+            </div>
+            <br /><br />
+            <div>
+              <ul>
+                <li>সম্মতি দিচ্ছি</li>
+                <li>সম্মতি দিচ্ছি না</li>
+              </ul>
+            </div>
+          </div>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+          <div>
+            <div>১২. <b>রোগির ঘোষনা:</b></div>
+            <br />
+
+            <div>আমি নিশ্চিত করছি যে-</div>
+            <br /><br />
+            <div>
+              <ul>
+                <li>উপরোক্ত তথ্যগুলো আমি পড়েছি অথবা আমাকে পড়ে শোনানো হয়েছে।</li>
+                <li>আমি বিষয়গুলো বুঝতে পেরেছি।</li>
+                <li>আমার প্রশ্ন করার সুযোগ ছিল।</li>
+                <li>
+                  আমি নিশ্চিত করছি যে অস্ত্রোপচারের পূর্বে পানাহার থেকে বিরত
+                  থাকার নির্দিষ্ট সময় সম্পর্কে চিকিৎসক আমাকে পরামর্শ দিয়েছেন।
+                </li>
+                <li>
+                  আমি জানি যে, অস্ত্রোপচারের আগে যে কোন সময়ে আমি এই সম্মতি
+                  প্রত্যাহার করতে পারি।
+                </li>
+                <li>
+                  আমি স্বেচ্ছায় এই অস্ত্রোপচার/চিকিৎসার জন্য সম্মতি প্রদান করছি।
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+          <div>
+            রোগী/অভিভাবকের নাম ও স্বাক্ষর:
+            ....................................................................................................................................................
+          </div>
+          <div>
+            .............................................................................................................................................................
+            তারিখ: ...............................
+          </div>
+          <div>
+            সার্জনের নাম ও স্বাক্ষর:
+            .....................................................................................................................................................................
+          </div>
+          <div>
+            .............................................................................................................................................................
+            তারিখ: ...............................
+          </div>
+          <div>
+            সাক্ষীর নাম ও স্বাক্ষর:
+            ......................................................................................................................................................................
+          </div>
+          <div>
+            .............................................................................................................................................................
+            তারিখ: ...............................
+          </div>
+        </div>
+
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="invasive-consent">
+        <header>
+          <h2>Directorate General of Health Services (DGHS), Bangladesh</h2>
+          <h2>Consent Form for Invasive Procedure</h2>
+          <h5>(ইনভেসিভ প্রোসিডিউরের জন্য সম্মতিপত্র)</h5>
+          <h2>Medicine & Allied Specialties</h2>
+          <h5>(স্বাস্থ্য অধিদপ্তর কর্তৃক অনুমোদনকৃত)</h5>
+        </header>
+        <div class="form">
+          <div class="line1">
+            Hospital Name/হাসপাতালের নাম:
+            ........................................................................................................................................................
+          </div>
+
+          <div class="line2">
+            Department/বিভাগ:
+            ...................................................................................
+            Ward/Unit/ওয়ার্ড/ইউনিট: ............................................
+          </div>
+          <div class="line3">
+            Registration No./রেজিষ্ট্রেশন নং:
+            ........................................................................................
+            Date/ডেট: ............................................
+          </div>
+          <div>
+            <b>Patient Information/রোগীর তথ্য:</b>
+          </div>
+          <div class="line4">
+            Name of Patient/রোগীর নাম:
+            ............................................................................................................................................................
+          </div>
+          <div class="line5">
+            Age/বয়স: .............................. বছর Sex/লিঙ্গ:
+            ..................................... Address/ঠিকানা:
+            ..................................................................
+          </div>
+          <div class="line6">
+            ................................................................................................................................................................................................................
+          </div>
+          <div class="line7">
+            NID No:
+            ....................................................................................
+            Contact No/মোবাইল নম্বর:
+            ............................................................
+          </div>
+          <div>
+            <b>Diagnosis (Provisional/Confirmed)/রোগ নির্ণয়:</b>
+          </div>
+          <br /><br />
+          <div class="line8">Details of the Procedure/প্রোসিডিউরের বিবরণ:</div>
+          <br /><br />
+
+          <div class="line9">
+            Name of Procedure/প্রোসিডিউরের নাম:
+            ...........................................................................................................................................
+          </div>
+
+          <div class="line10">
+            Indication/করার কারণ:
+            ......................................................................................................................................................................
+          </div>
+
+          <div class="line11">
+            <b>Consent Statement/সম্মতির বিবৃতি: </b>
+          </div>
+
+          <div class="line12">
+            1. Mr/Ms
+            ............................................................................................................................................................................................
+          </div>
+
+          <div class="line12">
+            <input type="checkbox" /> Patient <input type="checkbox" /> Legal
+            Guardian <input type="checkbox" /> Attendant
+          </div>
+
+          <div class="line13">
+            আমি, জনাব/জনাবা
+            ................................................................................................................................................................................
+          </div>
+
+          <div class="line14">
+            <input type="checkbox" /> রোগী <input type="checkbox" /> আইনগত
+            অভিভাবক <input type="checkbox" /> স্বজন
+          </div>
+
+          <div class="line15">
+            Hereby declare that / এই মর্মে ঘোষণা করছি যে, the nature, purpose,
+            benefits and necessity of the procedure have been explained to me
+            clearly. প্রোসিডিউরের প্রকৃতি, উদ্দেশ্যে, উপকারিতা ও প্রয়োজনীতা আমার
+            কাছে স্পষ্টভাবে ব্যাখ্যা করা হয়েছে।
+          </div>
+
+          <div class="line16">
+            I have been informed about possible risks and complications
+            including bleeding, infection, pain, failure of procedure. need for
+            repeat procedure, or any unforeseen complications. প্রোসিডিউর
+            রক্তক্ষরণ, সংক্রামণ, ব্যাথা, প্রোসিডিউর ব্যর্থ হওয়া, পুনরায়
+            প্রোসিডিউরের প্রয়োজন বা যেকোন অপ্রত্যাশিত জটিলতা সম্পর্কে আমাকে
+            জানানো হয়েছে।
+          </div>
+
+          <div class="line17">
+            I understand that, no guarantee has been given regarding the outcome
+            of the procedure. আমি বুঝতে পেরেছি যে, প্রোসিডিউরের ফলাফলের কোনো
+            নিশ্চয়তা প্রদান করা হয়নি।
+          </div>
+
+          <div class="line18">
+            Alternative options (if applicable) have been explained to me.
+            বিকল্প পদ্ধতি (যদি প্রযোজ্য হয়) সম্পর্কে আমাকে অবহিত করা হয়েছে।
+          </div>
+
+          <div class="line19">
+            If any additional of life-saving procedure becomes necessary during
+            the procedure, I authorize the doctors to do so on behalf of
+            patient's best interest. প্রোসিডিউরের সময় রোগীর স্বার্থে কোনো
+            অতিরিক্ত বা জীবনরক্ষাকারী ব্যবস্থা প্রয়োজন হলে চিকিৎসকদের তা গ্রহণের
+            অনুমতি দিচ্ছি।
+          </div>
+          <br /><br />
+          <div class="line20">
+            I have had the opportunity to ask relevent questions and received
+            satisfactory answers. আমি প্রশ্ন করার সুযোগ পেয়েছি এবং সন্তোষজনক
+            উত্তর পেয়েছি।
+          </div>
+
+          <div class="line21">
+            I understand that, I have the right to refuse of withdraw consent,
+            knowing the possible consequences. সম্ভব্য পরিণতি জেনে আমি সম্মতি
+            প্রত্যাহার বা প্রত্যাখান করার অধিকার রাখি, এটি আমি বুঝতে পেরেছি।
+          </div>
+
+          <div class="line22">
+            Declaration/ঘোষণা: I, voluntarily, give my free and informed consent
+            for the above-mentioned invasive procedure. আমি সম্পূর্ণ স্বেচ্ছায় ও
+            স্বজ্ঞানে উপরোক্ত ইনভেসিভ প্রোসিডিউরের জন্য সম্মতি প্রদান করছি
+          </div>
+
+          <br /><br />
+
+          <div class="line23">Signature / স্বাক্ষর</div>
+
+          <br /><br /><br />
+
+          <div class="line24" style="font-size: 80%">
+            <span>(Signature/Thumb Impression of Patient of Guardian)</span
+            ><br />
+            <span>(রোগী/অভিভাবকের স্বাক্ষর বা টিপসই)</span>
+          </div>
+
+          <div class="25">
+            Name/নাম:
+            ..............................................................................................................................................................................................
+          </div>
+
+          <div class="26">
+            Date & Time/তারিখ ও সময়:
+            ...................................................................................
+            Mobile/মোবাইল: ...............................................
+          </div>
+
+          <br /><br />
+          <div class="27">
+            <b>Attending Physician/চিকিৎসকের নাম ও স্বাক্ষর</b>
+          </div>
+
+          <div class="28">
+            Name/নাম:
+            .....................................................................................................
+            Designation/পদবী:
+            .....................................................
+          </div>
+
+          <div class="29">
+            Signature/স্বাক্ষর:
+            .................................................................................
+            Date & Time/তারিখ ও সময়:
+            ...............................................
+          </div>
+
+          <div class="30">
+            <b>Withness/স্বাক্ষীর নাম ও স্বাক্ষর</b>
+          </div>
+
+          <div class="31">
+            Name/নাম:
+            ............................................................................................................................................................................................
+          </div>
+
+          <div class="32">
+            Relationship/সম্পর্ক:
+            .....................................................................
+            Signature/স্বাক্ষর:
+            .......................................................................
+          </div>
+
+          <div class="33">
+            Date & Time/তারিখ ও সময়:
+            .....................................................................
+          </div>
+          <br /><br />
+
+          <div class="34" style="text-align: center">
+            FOR Official Use/অফিসিয়াল ব্যবহারের জন্য
+          </div>
+
+          <div class="35">
+            Procedure Performed On/প্রোসিডিউর সম্পাদনের তারিখ:
+            ............................../................................/................................
+          </div>
+          <div class="36">
+            Remark/মন্তব্য:
+            .....................................................................................................................................................................................
+          </div>
+        </div>
+
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+
+      <div class="medicine">
+        <div>
+          <div>
+            <h3>Medicine</h3>
+            <ul>
+              <li>K-One</li>
+              <li>Duratocin / Arbicin 100mcg/ml</li>
+              <li>Hexicord</li>
+              <li>Cotson 10mg</li>
+              <li>Isovent / Cytomis 200mg/600mg</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Others</h3>
+            <ul>
+              <li>Cord Clamp - (2)</li>
+              <li>Syringe - (2)</li>
+              <li>Alo Pad - (2)</li>
+              <li>Belt - (1)</li>
+              <li>Beby Wipes - (1)</li>
+              <li>Biomil / Lactogen - (1)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="print">
+          <button>Print</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

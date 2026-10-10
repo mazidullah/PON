@@ -1,0 +1,475 @@
+@font-face {
+  font-family: kalpurus;
+  src: url(../static/kalpurush.ttf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+body {
+  width: 100vw;
+  /* height: 100vh; */
+  margin: 0;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  overflow: hidden;
+  display: flex;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  user-select: none;
+  color: #fff;
+  background-color: #1f1f1f;
+  flex: 0 0 200px;
+  font-size: 14px;
+
+  & > div {
+    padding: 6px;
+  }
+
+  & > div:hover {
+    background-color: #313131;
+  }
+
+  & > div.active {
+    background-color: rgb(19, 104, 201);
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+
+  & > div {
+    display: none;
+  }
+
+  & > div.active {
+    display: block;
+  }
+}
+
+.print {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  button {
+    padding: 4px 3rem;
+    color: #fff;
+    background-color: rgb(6, 87, 192);
+  }
+}
+
+.op-note {
+  header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 4px;
+    div:nth-child(1) {
+      padding-left: 10px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    div:nth-child(2) {
+      flex: 1;
+      text-align: center;
+
+      div {
+        line-height: 1.3;
+      }
+    }
+  }
+
+  & > div:nth-child(2) {
+    text-align: center;
+    padding-block: 1rem;
+    font-weight: 600;
+    font-size: 21px;
+  }
+
+  .content > div {
+    margin-top: 1rem;
+    display: flex;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+
+    div:nth-child(1) {
+      flex: 0 0 260px;
+    }
+
+    div:nth-child(3) {
+      padding: 0 20px;
+    }
+  }
+
+  footer {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      border-top: 1px solid;
+    }
+
+    div:last-of-type {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.treatment-sheet-post-operative-order,
+.treatment-sheet-fresh-order {
+  header {
+    & > div:nth-child(1) {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #000;
+      border-radius: 10px;
+      padding: 4px 0;
+
+      div:nth-child(1) {
+        padding-left: 10px;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+
+      & > div:nth-child(2) {
+        flex: 1;
+        text-align: center;
+
+        div {
+          line-height: 1.3;
+        }
+      }
+    }
+
+    & > div:nth-child(2) {
+      margin-block: 8px;
+      padding: 10px;
+      border: 1px inset #000;
+      border-radius: 10px;
+
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        display: flex;
+        gap: 2px;
+
+        div:nth-child(2) {
+          font-weight: 600;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .follow-up {
+    height: 80vh;
+    border: 1px solid;
+    display: flex;
+
+    & > div:first-child {
+      height: 80vh;
+      width: 40%;
+      border-right: 1px solid;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      & > div:last-of-type {
+        margin-bottom: 15rem;
+      }
+    }
+
+    & > div:last-child {
+      height: 80vh;
+      width: 60%;
+
+      & > ul {
+        margin: 1rem 0 0 36px;
+
+        li {
+          margin-bottom: 10px;
+
+          div:nth-child(1) {
+            font-family: sans-serif;
+            font-size: 16px;
+            .bold {
+              font-weight: bold;
+            }
+            .italic {
+              font-style: italic;
+            }
+          }
+
+          div:nth-child(2) {
+            margin-top: 2px;
+            font-size: 13px;
+            font-weight: 600;
+            font-style: italic;
+          }
+        }
+      }
+
+      & > div:nth-child(1) {
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+        text-decoration: underline;
+      }
+
+      & > div:nth-child(2) {
+        margin: 30px 0 0 20px;
+        & > div:nth-child(1) {
+          img {
+            width: 110px;
+          }
+        }
+
+        & > div:last-of-type {
+          font-weight: 600;
+          position: relative;
+          transform: translate(16px, 0);
+        }
+      }
+    }
+  }
+
+  footer {
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    border-top: 1px solid;
+  }
+}
+
+.treatment-sheet-medicine {
+  & > header > div:first-child {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  & > header > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 4px;
+
+    div:nth-child(1) {
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    div:nth-child(2) {
+      flex: 1;
+      text-align: center;
+      h1 {
+        margin-bottom: 4px;
+      }
+      div {
+        line-height: 1.3;
+      }
+    }
+  }
+
+  & > header > div:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+
+    border: 1px inset #000;
+    border-radius: 10px;
+    padding: 10px;
+
+    div {
+      display: flex;
+    }
+
+    div div:first-of-type {
+      justify-self: flex-start;
+    }
+
+    div div:last-child {
+      margin: 0 5px;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+
+  th {
+    padding: 4px 0px;
+  }
+
+  td {
+    padding: 15px 0;
+  }
+}
+
+.cesarean-section-consent,
+.gyne-section-consent,
+.anesthesia-consent,
+.invasive-consent {
+  font-family: kalpurush;
+  font-size: 13px;
+  margin: 3rem;
+  line-height: 2;
+
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .form {
+    margin-bottom: 2rem;
+  }
+
+  .form > div {
+    margin-bottom: 1rem;
+  }
+
+  .consents > div {
+    margin-bottom: 0.5rem;
+    line-height: 2;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table,
+  td,
+  th {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    padding: 10px 4px;
+  }
+
+  .table-1,
+  .table-2 {
+    margin-block: 10px;
+    td:nth-child(1) {
+      width: 15%;
+    }
+
+    td:nth-child(2) {
+      width: 40%;
+    }
+  }
+
+  .table-1 {
+    tr:nth-child(3) {
+      td:nth-child(1) {
+        height: 100px;
+      }
+    }
+  }
+
+  ul {
+    margin-left: 4rem;
+  }
+}
+
+.medicine {
+  & > div {
+    display: flex;
+    gap: 3rem;
+
+    ul {
+      margin-top: 10px;
+      margin-left: 22px;
+    }
+
+    & > div {
+      padding: 10px;
+    }
+  }
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+
+  .print {
+    display: none !important;
+  }
+
+  .op-note {
+    .content {
+      margin-top: 2rem;
+    }
+
+    footer {
+      width: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-between;
+      bottom: 1rem;
+      left: 1rem;
+      right: 1rem;
+    }
+  }
+
+  .follow-up {
+    height: 70%;
+
+    footer {
+      display: block;
+    }
+  }
+}
